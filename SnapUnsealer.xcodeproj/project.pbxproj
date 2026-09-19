@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1C1C2781305E8D6E00C0430C /* ObjectivePGP in Frameworks */ = {isa = PBXBuildFile; productRef = 202DE131A89409562D31A461 /* ObjectivePGP */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1C1C26FA305E867900C0430C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1C2781305E8D6E00C0430C /* ObjectivePGP in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = SnapUnsealer;
 			packageProductDependencies = (
+				202DE131A89409562D31A461 /* ObjectivePGP */,
 			);
 			productName = SnapUnsealer;
 			productReference = 1C1C26EA305E867800C0430C /* SnapUnsealer.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 1C1C26E1305E867700C0430C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				39DF6E882F1AF92D7DEFB1B7 /* XCRemoteSwiftPackageReference "ObjectivePGP" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1C1C26EB305E867800C0430C /* Products */;
 			projectDirPath = "";
@@ -397,7 +406,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -427,7 +436,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -563,6 +572,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39DF6E882F1AF92D7DEFB1B7 /* XCRemoteSwiftPackageReference "ObjectivePGP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/ObjectivePGP.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		202DE131A89409562D31A461 /* ObjectivePGP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39DF6E882F1AF92D7DEFB1B7 /* XCRemoteSwiftPackageReference "ObjectivePGP" */;
+			productName = ObjectivePGP;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1C1C26E2305E867700C0430C /* Project object */;
 }
